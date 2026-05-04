@@ -1,0 +1,78 @@
+\documentclass[10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,mexico]{babel}
+\usepackage{amsmath,amsfonts,mathabx,amssymb,dsfont}
+\usepackage{bbm}
+\usepackage{cancel}
+\usepackage[colorlinks = true, linkcolor = magenta]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{wasysym}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{float}
+
+%Pendientes:
+%---Buscar implementaciones de modelos sobre cuestiones de derecho laboral
+%---Comenzar con encuestas sobre ley laboral
+%---Definir bien arquitectura,  ¿BERT-Multilingue?
+
+
+\author{Pedro D\'{i}az L\'{o}pez}
+\title{Fase 1, Introducci\'{o}n a los LLM's}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor= \color{white},   
+    commentstyle= \color{purple},
+    keywordstyle= \color{magenta},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{blue},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+\begin{document}
+
+\maketitle
+
+\subsection{Tarea lingüistica}
+\normalsize{Planteamos} para nuestro proyecto un LLM, experto en Derecho Laboral, al que el usuario
+pueda realizarle consultas respecto a cuestiones que envuelven las relaciones laborales.
+Algunos ejemplos de los posibles cuestionamientos son:
+\begin{itemize}
+\item Mi jefe me dijo que nos daba el d\'{i}a y a\'{u}n as\'{i} me lo descont\'{o}, ¿Es
+eso legal?
+\item Me contrataron como t\'{e}cnico de mantenimiento, pero me cobran por el uso de la herramienta
+¿Hay algo que pueda hacer?
+\end{itemize}
+
+\subsection{Corpus}
+Para nuestro proposito, nuestra fuente primaria de informaci\'{o}n ser\'{a} la Ley Federal del
+Treabajo, texto disponible en linea en formatos PDF y .doc, además de apoyarnos en otras leyes
+tales como el C\'{o}digo de Comercio, seg\'{u}n sea necesario. Naturalmente, \'{e}stos textos
+pertenecen al dominio legal 
+\subsection{Arquitectura}
+Como arquitecura base, proponemos usar un encoder-only, pues, dado el proposito de nuestro LLM,
+y como cualquier persona lo sabe, en derecho, el contexto y la forma constituyen el fondo.
+\subsection{Baseline}
+Como Baseline, esperamos que el modelo se comporte como cualquier persona ajena al ambito
+legal al tratar de leer una Ley, que sea capaz de relacionar los cuestionamientos con los
+ariculos relacionados, pero no necesariamente será capaz de dar las respuestas adecuadas a los mismos.
+\subsection{Motivaci\'{o}n}
+Considero que este proyecto es importante por el simple hecho de que el mexicano promedio desconoce
+tanto sus derechos, como sus obligaciones en materia laboral, dando paso a un abuso constante
+y sist\'{e}mico en las relaciones laborales en las que se ve involucrado. Tener acceso facil
+a un experto en materia laboral, podr\'{i}a ayudar a cambiar \'{e}sta din\'{a}mica.	
+\end{document}
