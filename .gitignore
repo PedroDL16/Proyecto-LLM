@@ -220,6 +220,9 @@ __marimo__/
 
 #LaTeX
 .tex/
+
+
+
 .out/
 .log/
 .synctex.out/
