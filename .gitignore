@@ -219,10 +219,23 @@ __marimo__/
 
 
 #LaTeX
-.tex/
+*.tex
+*.out
+*.log
+*.synctex.out
 
 
+#Hugging Face
 
-.out/
-.log/
-.synctex.out/
+.huggingface/
+cache/
+.hf/
+huggingface/
+~/.cache/huggingface/
+
+#Pesos de modelos
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
