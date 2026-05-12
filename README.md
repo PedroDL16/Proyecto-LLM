@@ -27,3 +27,14 @@ como sus obligaciones en materia laboral, dando paso a un abuso
 constante y sist´emico en las relaciones laborales en las que se 
 ve involucrado. Tener acceso facil a un experto en materia laboral,
 podr´ıa ayudar a cambiar ´esta din´amica.
+
+
+
+```text
+├───data
+│   ├───processed
+│   └───raw
+├───docs
+├───models
+└───notebooks
+    └───.ipynb_checkpoints
